@@ -1,0 +1,85 @@
+{%extends "base.html"%}
+
+{% block content %}
+<p class="TITLE_MAIN">CREATE EVENTS</p>
+    
+<br>
+<br>
+<br>
+<!--This needs to have some sort of title under for the people to understand whats goin on right now-->
+<br>
+<br>
+<br>
+<div>
+    <form method="POST">
+        <label for="music">Select A Music Genre:</label>
+        <select name="note" id="music">
+            <option value="indie">Indie</option>
+            <option value="rock">Rock</option>
+            <option value="punk">Punk</option>
+            <option value="house">House</option>
+            <option value="party">Party</option>
+            <option value="olds">Old School</option>
+        </select>
+        
+        <br>
+        <br>
+        <label for="ename" >Enter The Event Name:</label>
+        <br>
+        <textarea type="text" id="ename" name="note" placeholder="event name..."></textarea>
+        <br>    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+ 
+        <br>
+        <label for="description">Enter The Event Description:</label>
+        <br>
+        <textarea placeholder="event description..." name="note" id="description"></textarea>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- This is for the image -->
+        <label for="img">Select Event Image:</label>
+        <br>
+        <br>
+        <input type="file" id="img" name="note" accept="image/*" placeholder="Please Select An Image...">               
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- This is for the event dates -->
+        <label for="date">Select The Event Date:</label>
+        <br>
+        <br>
+        <input type="date" id="date" name="note">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit" name="submit" class="HOME_BUTTON gradient-button-1"> SUBMIT </button>
+    </form>
+    
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{%extends "base.html"%}
+
+{% block content %}
+<p class="TITLE_MAIN">LISTED EVENTS</p>
+    
+<br>
+<br>
+<br>
+
+<ul id="notes" class="list-group list-group-flush">
+    <!-- There is something wrong with this thing -->
+    {%for note in user.notes%}
+    <h2 class="list-group-item">{{note.title}}}</h2>
+    <h5 class="list-group-item">(DATE)</h5>
+            <!-- <div class="fakeimg" style="height:200px;"></div> -->
+    <p class="list-group-item">{{note.description}}</p>
+    {%endfor%}
+</ul>     
+        {% if user.is_authenticated %}
+            <a href="/home">
+                <button class="HOME_BUTTON gradient-button-1"> PURCHASE </button>
+            </a>
+        {% else %}
+            <a href="/login">
+                <button class="HOME_BUTTON gradient-button-1"> LOGIN </button>
+            </a>
+        {% endif %}
+        
+    
+
+
+
+{% endblock %}

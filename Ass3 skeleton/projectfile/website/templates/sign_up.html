@@ -1,0 +1,30 @@
+{%extends "base.html"%}
+
+
+{% block content %}
+<p class="TITLE_MAIN">SIGN UP BELOW!</p>
+
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" method="POST">
+            <label for="uid">Some details are needed!</label>
+            <input type="text" name="name" placeholder="name"/>
+            <input type="text" name="middlename" placeholder="middle name"/>
+            <input type="text" name="lastname" placeholder="last name"/>
+            <input type="text" name="dob" placeholder="date of birth"/>
+            <input type="text" name="adress" placeholder="adress"/>
+            <input type="text" name="pnumber" placeholder="Phone Number"/>
+            <input type="email" name="email" placeholder="email address"/>
+            <input type="password" name="pwd" placeholder="password"/>
+            <input type="password" name="pwdrepeat" placeholder="repeat password"/>
+            <p class="message">Already registered? <a href="/login">Login</a></p>
+            <br>
+            <button type="submit" name="submit" class="HOME_BUTTON gradient-button-1">Create</button>
+        </form>
+    </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+{% endblock %}
